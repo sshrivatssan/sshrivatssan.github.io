@@ -399,3 +399,2499 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+
+
+
+/* ==========================================================================
+   SHRI VATSSAN S — RESEARCH PORTFOLIO HOMEPAGE
+   ========================================================================== */
+
+
+/* --------------------------------------------------------------------------
+   HOMEPAGE: REMOVE DEFAULT ACADEMIC PAGES COLUMN RESTRICTIONS
+   -------------------------------------------------------------------------- */
+
+#main:has(.sv-home) {
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.page:has(.sv-home) {
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page:has(.sv-home) .page__inner-wrap {
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page:has(.sv-home) .page__content {
+  float: none !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page:has(.sv-home) .page__title {
+  display: none !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   MAIN HOMEPAGE
+   -------------------------------------------------------------------------- */
+
+.sv-home {
+  box-sizing: border-box;
+
+  width: min(1180px, calc(100% - 64px));
+
+  margin: 0 auto;
+
+  padding: 3.2rem 0 2.5rem;
+
+  color: #203b55;
+}
+
+
+/* --------------------------------------------------------------------------
+   HERO
+   -------------------------------------------------------------------------- */
+
+.sv-hero {
+  display: grid;
+
+  grid-template-columns: 340px minmax(0, 1fr);
+
+  column-gap: 4.5rem;
+
+  align-items: center;
+
+  min-height: 350px;
+}
+
+
+/* --------------------------------------------------------------------------
+   PORTRAIT AREA
+   -------------------------------------------------------------------------- */
+
+.sv-photo-area {
+  position: relative;
+
+  width: 330px;
+  height: 330px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+}
+
+
+/* Decorative background circles */
+
+.sv-photo-bg {
+  position: absolute;
+
+  display: block;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.sv-photo-bg-one {
+  width: 205px;
+  height: 205px;
+
+  left: -20px;
+  top: 4px;
+
+  background: rgba(38, 110, 163, 0.055);
+}
+
+
+.sv-photo-bg-two {
+  width: 175px;
+  height: 175px;
+
+  right: -5px;
+  bottom: -3px;
+
+  background: rgba(40, 128, 170, 0.075);
+}
+
+
+/* Actual photograph */
+
+.page__content .sv-photo {
+  position: relative;
+
+  z-index: 2;
+
+  display: block !important;
+
+  width: 290px !important;
+  height: 290px !important;
+
+  min-width: 290px !important;
+  min-height: 290px !important;
+
+  max-width: 290px !important;
+  max-height: 290px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  object-fit: cover !important;
+  object-position: center center !important;
+
+  border: 5px solid #ffffff !important;
+
+  border-radius: 50% !important;
+
+  box-shadow:
+    0 0 0 1px #d7e0e7,
+    0 10px 28px rgba(27, 58, 82, 0.12) !important;
+}
+
+
+/* Prevent default article image rules from interfering */
+
+.page__content .sv-photo:hover {
+  box-shadow:
+    0 0 0 1px #d7e0e7,
+    0 10px 28px rgba(27, 58, 82, 0.12) !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   PROFILE INFORMATION
+   -------------------------------------------------------------------------- */
+
+.sv-profile {
+  width: 100%;
+
+  max-width: 760px;
+}
+
+
+.sv-profile h1 {
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 2.25rem !important;
+
+  line-height: 1.1;
+
+  font-weight: 600;
+
+  letter-spacing: -0.015em;
+
+  color: #153f66;
+}
+
+
+.sv-title-line {
+  width: 54px;
+  height: 2px;
+
+  margin: 0.85rem 0 1.2rem;
+
+  background: #3979a8;
+}
+
+
+/* Degree / current position */
+
+.sv-degree {
+  max-width: 720px;
+
+  margin: 0 0 1rem !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 1.15rem !important;
+
+  line-height: 1.48;
+
+  font-weight: 400;
+
+  color: #29445d;
+}
+
+
+/* Research description */
+
+.sv-bio {
+  max-width: 760px;
+
+  margin: 0 !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.94rem !important;
+
+  line-height: 1.65;
+
+  color: #4b5d6b;
+}
+
+
+/* ==========================================================================
+   RESEARCH / PROFESSIONAL LINKS
+   ========================================================================== */
+
+.sv-links {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 0.75rem;
+
+  margin-top: 1.55rem;
+}
+
+
+.page__content .sv-links a {
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center;
+
+  min-height: 38px;
+
+  box-sizing: border-box;
+
+  margin: 0 !important;
+
+  padding: 0.48rem 1rem;
+
+  border: 1px solid #aebdca;
+
+  border-radius: 3px;
+
+  background: #ffffff;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 0.78rem;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  color: #234865 !important;
+
+  text-decoration: none !important;
+
+  box-shadow: none !important;
+
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+
+/* ICON */
+
+.page__content .sv-links a i {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  margin: 0 0.55rem 0 0 !important;
+
+  padding: 0;
+
+  font-size: 0.95rem;
+
+  line-height: 1;
+
+  color: #234865;
+}
+
+
+/* TEXT */
+
+.page__content .sv-links a span {
+  display: inline-block;
+
+  margin: 0;
+
+  padding: 0;
+
+  line-height: 1;
+}
+
+
+/* HOVER */
+
+.page__content .sv-links a:hover {
+  border-color: #477ba1;
+
+  background: #f7fafc;
+
+  color: #153f66 !important;
+
+  text-decoration: none !important;
+
+  transform: translateY(-1px);
+}
+
+
+.page__content .sv-links a:hover i {
+  color: #153f66;
+}
+
+/* --------------------------------------------------------------------------
+   RESEARCH INTERESTS
+   -------------------------------------------------------------------------- */
+
+.sv-interests {
+  margin-top: 2.6rem;
+
+  padding: 2rem 0 0;
+
+  border-top: 1px solid #ced9e1;
+}
+
+
+/* Research interests heading */
+
+.sv-section-heading {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.25rem;
+
+  margin-bottom: 1.9rem;
+}
+
+
+.sv-section-heading span {
+  display: block;
+
+  width: 72px;
+  height: 1px;
+
+  background: #afc2d0;
+}
+
+
+.page__content .sv-section-heading h2 {
+  margin: 0 !important;
+
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.83rem !important;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+
+  color: #294b65;
+}
+
+
+/* --------------------------------------------------------------------------
+   RESEARCH INTEREST GRID
+   -------------------------------------------------------------------------- */
+.sv-interest-row {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: stretch;
+
+  width: 100%;
+}
+
+
+.sv-interest {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.35rem;
+
+  min-height: 105px;
+
+  padding: 0.5rem 2.2rem;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  color: #173f60;
+}
+
+
+.sv-interest:first-child {
+  padding-left: 0;
+}
+
+
+.sv-interest:last-child {
+  padding-right: 0;
+}
+
+
+.sv-interest:not(:last-child) {
+  border-right: 1px solid #d5dfe6;
+}
+
+
+/* Large research-interest icon */
+
+.sv-interest-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 72px;
+
+  width: 72px;
+  height: 72px;
+
+  border-radius: 50%;
+
+  background: #eef5f9;
+
+  color: #1f608b;
+}
+
+
+.sv-interest-icon i {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.9rem !important;
+
+  line-height: 1;
+}
+
+
+/* Research-interest text */
+
+.sv-interest-text {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.98rem;
+
+  font-weight: 400;
+
+  line-height: 1.42;
+
+  color: #173f60;
+}
+
+
+
+/* ==========================================================================
+   HEADER / NAVIGATION
+   ========================================================================== */
+
+.masthead {
+  background: #ffffff;
+
+  border-bottom: 1px solid #e2e7eb;
+
+  box-shadow: none;
+}
+
+
+.masthead__inner-wrap {
+  width: min(1180px, calc(100% - 64px)) !important;
+
+  max-width: none !important;
+
+  margin: 0 auto !important;
+
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+
+.greedy-nav {
+  background: #ffffff;
+
+  min-height: 54px;
+}
+
+
+/* Site title */
+
+.greedy-nav .site-title {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.88rem;
+
+  font-weight: 600;
+
+  color: #183e5e;
+}
+
+
+/* Desktop menu */
+
+.greedy-nav .visible-links {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.greedy-nav .visible-links a {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 0.76rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.025em;
+
+  color: #25465f;
+}
+
+
+/* ==========================================================================
+   TABLET
+   ========================================================================== */
+
+@media (max-width: 980px) {
+
+  .sv-home {
+    width: calc(100% - 48px);
+
+    padding-top: 2.6rem;
+  }
+
+
+  .sv-hero {
+    grid-template-columns: 285px minmax(0, 1fr);
+
+    column-gap: 3rem;
+  }
+
+
+  .sv-photo-area {
+    width: 280px;
+    height: 280px;
+  }
+
+
+  .page__content .sv-photo {
+    width: 250px !important;
+    height: 250px !important;
+
+    min-width: 250px !important;
+    min-height: 250px !important;
+
+    max-width: 250px !important;
+    max-height: 250px !important;
+  }
+
+
+  .sv-profile h1 {
+    font-size: 2rem !important;
+  }
+
+
+  .sv-degree {
+    font-size: 1.05rem !important;
+  }
+
+
+  .sv-interest {
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+  }
+
+}
+
+
+/* ==========================================================================
+   MOBILE
+   ========================================================================== */
+
+@media (max-width: 700px) {
+
+  .sv-home {
+    width: calc(100% - 32px);
+
+    padding-top: 2rem;
+  }
+
+
+  .sv-hero {
+    display: block;
+
+    min-height: 0;
+  }
+
+
+  .sv-photo-area {
+    width: 255px;
+    height: 255px;
+
+    margin: 0 auto 2rem;
+  }
+
+
+  .page__content .sv-photo {
+    width: 225px !important;
+    height: 225px !important;
+
+    min-width: 225px !important;
+    min-height: 225px !important;
+
+    max-width: 225px !important;
+    max-height: 225px !important;
+  }
+
+
+  .sv-profile {
+    max-width: none;
+
+    text-align: center;
+  }
+
+
+  .sv-profile h1 {
+    font-size: 1.9rem !important;
+  }
+
+
+  .sv-title-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .sv-degree {
+    font-size: 1rem !important;
+  }
+
+
+  .sv-bio {
+    font-size: 0.9rem !important;
+  }
+
+
+  .sv-links {
+    justify-content: center;
+  }
+
+
+  .sv-interests {
+    margin-top: 2.3rem;
+  }
+
+
+  .sv-section-heading span {
+    width: 38px;
+  }
+
+
+  .sv-interest-row {
+    display: block;
+  }
+
+
+  .sv-interest {
+    justify-content: center;
+
+    min-height: 0;
+
+    padding: 1.25rem 0;
+
+    text-align: center;
+  }
+
+
+  .sv-interest:not(:last-child) {
+    border-right: 0;
+
+    border-bottom: 1px solid #d5dfe6;
+  }
+
+
+  .masthead__inner-wrap {
+    width: calc(100% - 32px) !important;
+  }
+
+}
+
+
+
+
+/* ==========================================================================
+   FORMAL ACADEMIC TYPOGRAPHY
+   ========================================================================== */
+
+
+/* Main name */
+
+.sv-profile h1 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em;
+}
+
+
+/* Degree / affiliation */
+
+.sv-degree {
+  font-family: "Lora", Georgia, serif !important;
+  font-weight: 500 !important;
+  line-height: 1.55 !important;
+}
+
+
+/* Main introduction */
+
+.sv-bio {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.98rem !important;
+  font-weight: 400 !important;
+
+  line-height: 1.65 !important;
+
+  margin: 0 0 0.8rem !important;
+}
+
+
+/* Research Interests heading */
+
+.sv-section-heading h2 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-weight: 400 !important;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* Research interest names */
+
+.sv-interest-text {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-weight: 500 !important;
+
+  line-height: 1.45;
+}
+
+
+/* Google Scholar / GitHub / LinkedIn / ORCID */
+
+.sv-links a {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-weight: 500 !important;
+}
+
+
+/* Navbar */
+
+.masthead__menu-item,
+.masthead__menu-item a {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-weight: 500 !important;
+}
+
+
+/* Name in navbar */
+
+.masthead__menu-item--lg,
+.masthead__menu-item--lg a {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-size: 1.08rem !important;
+
+  font-weight: 700 !important;
+}
+
+
+
+
+
+/* ==========================================================================
+   CUSTOM FOOTER
+   ========================================================================== */
+
+.sv-footer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.6rem 1rem 1.4rem;
+
+  text-align: center;
+}
+
+
+/* Copyright */
+
+.sv-footer-copyright {
+  margin-bottom: 0.9rem;
+
+  color: #29465f;
+
+  font-family: "Lora", Georgia, serif;
+
+  font-size: 0.92rem;
+
+  font-weight: 400;
+}
+
+
+.sv-footer-copyright strong {
+  color: #173f60;
+
+  font-family: "Libre Baskerville", Georgia, serif;
+
+  font-weight: 700;
+}
+
+
+/* Social icons */
+
+.sv-footer-socials {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.8rem;
+}
+
+
+.sv-footer-socials a {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  background: #173f60;
+
+  color: #ffffff !important;
+
+  border-radius: 50%;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.sv-footer-socials a i {
+  color: #ffffff !important;
+
+  font-size: 1.05rem;
+
+  line-height: 1;
+}
+
+
+.sv-footer-socials a:hover {
+  background: #2876a8;
+
+  transform: translateY(-2px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+  .sv-footer {
+    padding: 1.4rem 1rem;
+  }
+
+
+  .sv-footer-socials a {
+    width: 39px;
+    height: 39px;
+  }
+
+}
+
+
+
+/* Keep footer below the first screen */
+body:has(.sv-home) .sv-home {
+  min-height: 100vh;
+}
+
+body:has(.sv-home) .page__footer {
+  position: static !important;
+  margin-top: 0 !important;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   RESEARCH / PUBLICATIONS PAGE
+   Match homepage typography and remove sidebar spacing
+   ========================================================================== */
+
+
+/* Full-width content when author sidebar is disabled */
+
+.layout--archive .archive {
+  float: none !important;
+  width: 100% !important;
+  max-width: 1050px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* Main Research page */
+
+.sv-research-page {
+  width: 100%;
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  padding: 2.5rem 0 4rem;
+}
+
+
+/* Research heading */
+
+.sv-research-header h1 {
+  margin: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-size: 2.05rem !important;
+  font-weight: 700 !important;
+
+  line-height: 1.3 !important;
+
+  color: #153f66 !important;
+
+  border: 0 !important;
+}
+
+
+/* Small blue line below Research */
+
+.sv-research-title-line {
+  width: 45px;
+  height: 2px;
+
+  margin: 0.85rem 0 1.05rem;
+
+  background: #2876a8;
+}
+
+
+/* Intro text */
+
+.sv-research-header p {
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.96rem !important;
+  font-weight: 400 !important;
+
+  line-height: 1.65 !important;
+
+  color: #536674 !important;
+}
+
+
+/* JOURNAL / CONFERENCE / POSTER PRESENTATION */
+
+.sv-pub-section-heading h2 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-size: 0.92rem !important;
+  font-weight: 400 !important;
+
+  letter-spacing: 0.1em;
+
+  color: #244963 !important;
+
+  text-transform: uppercase;
+}
+
+
+/* Paper title */
+
+.sv-paper-title {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-size: 1.08rem !important;
+  font-weight: 700 !important;
+
+  line-height: 1.5 !important;
+
+  color: #155f8a !important;
+
+  text-decoration: none !important;
+}
+
+
+a.sv-paper-title:hover {
+  color: #2876a8 !important;
+
+  text-decoration: underline !important;
+
+  text-underline-offset: 4px;
+}
+
+
+/* Authors */
+
+.sv-paper-authors {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.89rem !important;
+  font-weight: 400 !important;
+
+  line-height: 1.55 !important;
+
+  color: #3e5262 !important;
+}
+
+
+.sv-paper-authors strong {
+  font-weight: 600 !important;
+
+  color: #173f60 !important;
+}
+
+
+/* Journal / conference details */
+
+.sv-paper-venue {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.84rem !important;
+  font-weight: 400 !important;
+
+  line-height: 1.6 !important;
+
+  color: #687985 !important;
+}
+
+
+/* DOI / Award / View Poster buttons */
+
+.sv-paper-links a {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.73rem !important;
+  font-weight: 500 !important;
+}
+
+
+/* ==========================================================================
+   FOOTER — NORMAL PAGE FLOW
+   ========================================================================== */
+
+.page__footer {
+  position: static !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  width: 100%;
+
+  margin-top: 0 !important;
+}
+
+
+/* ==========================================================================
+   PUBLICATIONS PAGE — SAME TYPOGRAPHY AS HOME PAGE
+   ========================================================================== */
+
+
+/* Main Research heading */
+.sv-research-header h1 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.025em !important;
+
+  color: #153f66 !important;
+}
+
+
+/* Introductory sentence */
+.sv-research-header p {
+  font-family: "Lora", Georgia, serif !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+
+  color: #536674 !important;
+}
+
+
+/* JOURNAL / CONFERENCE / POSTER PRESENTATION */
+.sv-pub-section-heading h2 {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-weight: 400 !important;
+
+  letter-spacing: 0.10em !important;
+
+  color: #244963 !important;
+}
+
+
+/* Paper titles */
+.sv-paper-title,
+.sv-paper-title:visited {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+
+  font-size: 1.08rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+
+  color: #155f8a !important;
+
+  text-decoration: none !important;
+}
+
+
+/* Hover only for clickable titles */
+a.sv-paper-title:hover {
+  color: #2876a8 !important;
+
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px;
+}
+
+
+/* Author names */
+.sv-paper-authors {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.89rem !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+
+  color: #3e5262 !important;
+}
+
+
+/* Your name */
+.sv-paper-authors strong {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-weight: 600 !important;
+
+  color: #173f60 !important;
+}
+
+
+/* Journal / Conference / Institution / Year */
+.sv-paper-venue {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.84rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+
+  color: #687985 !important;
+}
+
+
+/* DOI / Award / View Poster buttons */
+.sv-paper-links a,
+.sv-paper-status {
+  font-family: "Lora", Georgia, serif !important;
+
+  font-size: 0.73rem !important;
+  font-weight: 500 !important;
+}
+
+
+/* ==========================================================================
+   REMOVE LEFT SIDEBAR SPACE
+   ========================================================================== */
+
+.layout--archive .archive {
+  float: none !important;
+
+  width: 100% !important;
+  max-width: 1050px !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* ==========================================================================
+   FOOTER — NORMAL DOCUMENT FLOW
+   ========================================================================== */
+
+.page__footer {
+  position: static !important;
+
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+
+  width: 100%;
+}
+
+
+/* ==========================================================================
+   RESEARCH / PUBLICATIONS PAGE
+   ========================================================================== */
+
+.sv-research-page {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+
+/* --------------------------------------------------------------------------
+   Remove AcademicPages sidebar space
+   -------------------------------------------------------------------------- */
+
+.layout--archive .archive {
+  float: none !important;
+  width: 100% !important;
+  max-width: 1050px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   PAGE HEADER
+   -------------------------------------------------------------------------- */
+
+.sv-research-header {
+  margin-bottom: 3.2rem;
+}
+
+.sv-research-header h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 2.05rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+
+  color: #153f66 !important;
+}
+
+.sv-research-title-line {
+  width: 46px;
+  height: 2px;
+
+  margin: 0.85rem 0 1rem;
+
+  background: #2876a8;
+}
+
+.sv-research-intro {
+  max-width: 760px;
+
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.94rem !important;
+  font-weight: 400 !important;
+  line-height: 1.7 !important;
+
+  color: #536674 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   JOURNAL / CONFERENCE / POSTER PRESENTATION HEADINGS
+   -------------------------------------------------------------------------- */
+
+.sv-pub-section {
+  margin-bottom: 3.8rem;
+}
+
+.sv-pub-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.sv-pub-section-heading span {
+  width: 42px;
+  height: 1px;
+
+  background: #a8bbc8;
+}
+
+.sv-pub-section-heading h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 0.91rem !important;
+  font-weight: 400 !important;
+
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+
+  color: #244963 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   INDIVIDUAL PUBLICATION
+   -------------------------------------------------------------------------- */
+
+.sv-publication {
+  position: relative;
+
+  margin-bottom: 2rem;
+  padding: 0 0 2rem 1.35rem;
+
+  border-bottom: 1px solid #e2e8ec;
+}
+
+.sv-publication:last-child {
+  margin-bottom: 0;
+}
+
+.sv-publication::before {
+  content: "";
+
+  position: absolute;
+  top: 4px;
+  left: 0;
+
+  width: 3px;
+  height: 43px;
+
+  border-radius: 2px;
+
+  background: #2876a8;
+}
+
+
+/* --------------------------------------------------------------------------
+   PAPER TITLE
+   -------------------------------------------------------------------------- */
+
+.sv-paper-title,
+.sv-paper-title:visited {
+  display: inline-block;
+
+  max-width: 930px;
+
+  margin: 0 0 0.65rem;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 1.08rem !important;
+  font-weight: 700 !important;
+  line-height: 1.5 !important;
+
+  color: #155f8a !important;
+
+  text-decoration: none !important;
+}
+
+a.sv-paper-title:hover {
+  color: #2876a8 !important;
+
+  text-decoration: underline !important;
+  text-decoration-thickness: 1px !important;
+  text-underline-offset: 4px;
+}
+
+.sv-paper-title-static {
+  color: #244963 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   AUTHORS
+   -------------------------------------------------------------------------- */
+
+.sv-paper-authors {
+  margin: 0 0 0.3rem !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+
+  color: #405565 !important;
+}
+
+.sv-paper-authors strong {
+  font-weight: 600 !important;
+
+  color: #173f60 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   JOURNAL / CONFERENCE / POSTER DETAILS
+   -------------------------------------------------------------------------- */
+
+.sv-paper-venue {
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.84rem !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+
+  color: #687985 !important;
+}
+
+.sv-paper-venue strong {
+  font-weight: 600 !important;
+
+  color: #415c70 !important;
+}
+
+.sv-paper-venue em {
+  font-style: italic;
+}
+
+
+/* --------------------------------------------------------------------------
+   BEST PAPER AWARD
+   -------------------------------------------------------------------------- */
+
+.sv-publication-note {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 0.4rem;
+
+  margin-top: 0.75rem;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 600;
+
+  color: #71591d;
+}
+
+.sv-publication-note i {
+  font-size: 0.82rem;
+}
+
+.sv-publication-note a {
+  margin-left: 0.25rem;
+
+  color: #176b9a !important;
+
+  font-weight: 500;
+
+  text-decoration: none !important;
+}
+
+.sv-publication-note a:hover {
+  text-decoration: underline !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   PRESENTED STATUS
+   -------------------------------------------------------------------------- */
+
+.sv-paper-status {
+  display: inline-block;
+
+  margin: 0.7rem 0 0 !important;
+  padding: 0.25rem 0.65rem;
+
+  border: 1px solid #ccd8df;
+  border-radius: 3px;
+
+  background: #f6f9fa;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.73rem !important;
+  font-weight: 500 !important;
+
+  color: #536a79 !important;
+}
+
+
+/* --------------------------------------------------------------------------
+   FOOTER — NOT FIXED
+   -------------------------------------------------------------------------- */
+
+.page__footer {
+  position: static !important;
+
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  width: 100%;
+}
+
+
+/* --------------------------------------------------------------------------
+   MOBILE
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 760px) {
+
+  .sv-research-page {
+    padding: 1.6rem 0 3rem;
+  }
+
+  .sv-research-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .sv-research-header h1 {
+    font-size: 1.75rem !important;
+  }
+
+  .sv-pub-section {
+    margin-bottom: 3rem;
+  }
+
+  .sv-pub-section-heading {
+    gap: 0.7rem;
+  }
+
+  .sv-pub-section-heading span {
+    width: 27px;
+  }
+
+  .sv-pub-section-heading h2 {
+    font-size: 0.82rem !important;
+  }
+
+  .sv-publication {
+    padding-left: 1rem;
+  }
+
+  .sv-paper-title,
+  .sv-paper-title:visited {
+    font-size: 0.98rem !important;
+  }
+
+  .sv-paper-authors {
+    font-size: 0.82rem !important;
+  }
+
+  .sv-paper-venue {
+    font-size: 0.79rem !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   EXPERIENCE PAGE
+   ============================================================ */
+
+.experience-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2.2rem 0 5rem;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.experience-header {
+  margin-bottom: 4.5rem;
+}
+
+.experience-header h1 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 2.05rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+
+  color: #153f66 !important;
+}
+
+.experience-header-line {
+  width: 46px;
+  height: 2px;
+
+  margin: 0.85rem 0 1rem;
+
+  background: #2876a8;
+}
+
+.experience-header p {
+  max-width: 780px;
+
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.94rem !important;
+  line-height: 1.8 !important;
+
+  color: #617482 !important;
+}
+
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+
+.experience-timeline {
+  position: relative;
+
+  max-width: 900px;
+
+  margin: 0 auto 6rem;
+  padding: 1.5rem 0;
+}
+
+
+/* central line */
+
+.timeline-main-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 2px;
+
+  transform: translateX(-50%);
+
+  background: #c7d5df;
+}
+
+
+/* ============================================================
+   TIMELINE ITEMS
+   ============================================================ */
+
+.timeline-item {
+  position: relative;
+
+  width: calc(50% - 48px);
+
+  margin-bottom: 4.2rem;
+}
+
+
+/* left card */
+
+.timeline-item-left {
+  margin-right: calc(50% + 48px);
+}
+
+
+/* right card */
+
+.timeline-item-right {
+  margin-left: calc(50% + 48px);
+}
+
+
+/* ============================================================
+   TIMELINE NODE
+   ============================================================ */
+
+.timeline-node {
+  position: absolute;
+
+  top: 35px;
+
+  width: 22px;
+  height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #2876a8;
+  border-radius: 50%;
+
+  background: #fff;
+
+  z-index: 5;
+}
+
+.timeline-node span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #2876a8;
+}
+
+
+.timeline-item-left .timeline-node {
+  right: -59px;
+}
+
+.timeline-item-right .timeline-node {
+  left: -59px;
+}
+
+
+/* ============================================================
+   DATE
+   ============================================================ */
+
+.timeline-date {
+  position: absolute;
+
+  top: 23px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-date-right {
+  left: calc(100% + 85px);
+
+  text-align: left;
+}
+
+.timeline-date-left {
+  right: calc(100% + 85px);
+
+  text-align: right;
+}
+
+.timeline-year {
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 1.18rem !important;
+  font-weight: 700;
+
+  color: #185d88;
+}
+
+.timeline-month {
+  margin-top: 0.15rem;
+
+  white-space: nowrap;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.68rem !important;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+
+  color: #7b8d98;
+}
+
+
+/* ============================================================
+   TIMELINE CARD
+   ============================================================ */
+
+.timeline-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.15rem;
+
+  min-height: 135px;
+
+  padding: 1.25rem 1.3rem;
+
+  border: 1px solid #dde6eb;
+  border-radius: 4px;
+
+  background: #fff;
+
+  text-decoration: none !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-3px);
+
+  border-color: #a9c6d8;
+
+  box-shadow:
+    0 8px 22px
+    rgba(27, 72, 101, 0.09);
+}
+
+
+/* ============================================================
+   TIMELINE LOGO
+   ============================================================ */
+
+.timeline-logo {
+  flex: 0 0 72px;
+
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-logo img {
+  display: block;
+
+  max-width: 70px;
+  max-height: 70px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* ============================================================
+   TIMELINE TEXT
+   ============================================================ */
+
+.timeline-card-content {
+  flex: 1;
+}
+
+.timeline-type {
+  margin-bottom: 0.35rem;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.61rem !important;
+  font-weight: 600;
+
+  letter-spacing: 0.09em;
+
+  color: #83949f;
+}
+
+.timeline-card-content h2 {
+  margin: 0 0 0.35rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+
+  color: #185d88 !important;
+}
+
+.timeline-card-content h3 {
+  margin: 0 0 0.25rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 600 !important;
+
+  color: #415e70 !important;
+}
+
+.timeline-card-content p {
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.7rem !important;
+  line-height: 1.5 !important;
+
+  color: #768995 !important;
+}
+
+.timeline-more {
+  display: inline-block;
+
+  margin-top: 0.65rem;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.64rem !important;
+
+  color: #2876a8;
+}
+
+
+/* ============================================================
+   DETAILED EXPERIENCE
+   ============================================================ */
+
+.experience-details {
+  margin-top: 1rem;
+}
+
+
+/* heading */
+
+.experience-section-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 3.5rem;
+}
+
+.experience-section-heading .heading-line {
+  width: 35px;
+  height: 1px;
+
+  background: #9eb4c3;
+}
+
+.experience-section-heading h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+
+  letter-spacing: 0.1em;
+
+  color: #244b67 !important;
+}
+
+
+/* ============================================================
+   EXPERIENCE ENTRY
+   ============================================================ */
+
+.experience-entry {
+  position: relative;
+
+  scroll-margin-top: 90px;
+
+  margin-bottom: 4.2rem;
+
+  padding:
+    0
+    0
+    3.5rem
+    1.5rem;
+
+  border-left: 3px solid #2876a8;
+  border-bottom: 1px solid #e0e7eb;
+}
+
+
+/* ============================================================
+   EXPERIENCE HEADER
+   ============================================================ */
+
+.experience-entry-header {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1.7rem;
+}
+
+
+/* logo */
+
+.experience-entry-logo {
+  flex: 0 0 72px;
+
+  width: 72px;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-entry-logo img {
+  display: block;
+
+  max-width: 68px;
+  max-height: 68px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* institution */
+
+.experience-entry-heading {
+  flex: 1;
+}
+
+.experience-entry-heading h2 {
+  margin: 0 0 0.35rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 1.17rem !important;
+  font-weight: 700 !important;
+  line-height: 1.45 !important;
+
+  color: #185d88 !important;
+}
+
+.experience-role {
+  margin-bottom: 0.2rem;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.83rem !important;
+  font-weight: 600;
+
+  color: #385a70;
+}
+
+.experience-location {
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.76rem !important;
+  line-height: 1.5;
+
+  color: #768894;
+}
+
+
+/* ============================================================
+   PERIOD
+   ============================================================ */
+
+.experience-period {
+  min-width: 110px;
+
+  text-align: right;
+
+  font-family: "Lora", Georgia, serif !important;
+}
+
+.experience-period strong {
+  display: block;
+
+  font-size: 0.76rem !important;
+  font-weight: 600;
+
+  color: #526c7c;
+}
+
+.experience-period span {
+  display: block;
+
+  margin-top: 0.1rem;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 1rem !important;
+  font-weight: 700;
+
+  color: #185d88;
+}
+
+
+/* ============================================================
+   PROJECT TITLE
+   ============================================================ */
+
+.experience-project {
+  margin-bottom: 1.3rem;
+}
+
+.experience-project > span {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.62rem !important;
+  font-weight: 600;
+
+  letter-spacing: 0.09em;
+
+  color: #83939d;
+}
+
+.experience-project h3 {
+  max-width: 850px;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  line-height: 1.55 !important;
+
+  color: #244f6c !important;
+}
+
+
+/* ============================================================
+   BODY
+   ============================================================ */
+
+.experience-entry > p {
+  max-width: 930px;
+
+  margin: 0 0 1rem !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.84rem !important;
+  font-weight: 400 !important;
+  line-height: 1.9 !important;
+
+  color: #566b79 !important;
+
+  text-align: justify;
+}
+
+
+/* ============================================================
+   LEARNING BOX
+   ============================================================ */
+
+.experience-learning {
+  max-width: 930px;
+
+  margin-top: 1.6rem;
+
+  padding:
+    1.05rem
+    1.25rem;
+
+  border-left: 2px solid #8fb6cd;
+
+  background: #f7fafc;
+}
+
+.experience-learning h4 {
+  margin: 0 0 0.5rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+
+  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-size: 0.78rem !important;
+  font-weight: 700 !important;
+
+  color: #315a73 !important;
+}
+
+.experience-learning p {
+  margin: 0 !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.78rem !important;
+  line-height: 1.75 !important;
+
+  color: #607581 !important;
+}
+
+
+/* ============================================================
+   TAGS
+   ============================================================ */
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.48rem;
+
+  margin-top: 1.35rem;
+}
+
+.experience-tags span {
+  display: inline-block;
+
+  padding:
+    0.32rem
+    0.68rem;
+
+  border: 1px solid #cfdee7;
+  border-radius: 20px;
+
+  background: #f8fafb;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 0.67rem !important;
+
+  color: #3e637a;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  .experience-page {
+    padding: 1.5rem 0 3rem;
+  }
+
+
+  /* header */
+
+  .experience-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .experience-header h1 {
+    font-size: 1.75rem !important;
+  }
+
+
+  /* timeline */
+
+  .experience-timeline {
+    padding-left: 35px;
+    margin-bottom: 4.5rem;
+  }
+
+  .timeline-main-line {
+    left: 9px;
+
+    transform: none;
+  }
+
+
+  .timeline-item,
+  .timeline-item-left,
+  .timeline-item-right {
+    width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+
+  .timeline-item-left .timeline-node,
+  .timeline-item-right .timeline-node {
+    left: -36px;
+    right: auto;
+  }
+
+
+  /* date becomes normal flow */
+
+  .timeline-date,
+  .timeline-date-left,
+  .timeline-date-right {
+    position: static;
+
+    margin-bottom: 0.6rem;
+
+    text-align: left;
+  }
+
+  .timeline-date {
+    flex-direction: row;
+    align-items: baseline;
+
+    gap: 0.55rem;
+  }
+
+
+  /* timeline card */
+
+  .timeline-card {
+    min-height: auto;
+
+    padding: 1rem;
+  }
+
+  .timeline-logo {
+    flex-basis: 55px;
+
+    width: 55px;
+    height: 55px;
+  }
+
+  .timeline-logo img {
+    max-width: 53px;
+    max-height: 53px;
+  }
+
+
+  /* section title */
+
+  .experience-section-heading h2 {
+    font-size: 0.75rem !important;
+  }
+
+
+  /* experience */
+
+  .experience-entry {
+    padding-left: 1rem;
+  }
+
+  .experience-entry-header {
+    align-items: flex-start;
+  }
+
+  .experience-entry-logo {
+    flex-basis: 55px;
+
+    width: 55px;
+    height: 55px;
+  }
+
+  .experience-entry-logo img {
+    max-width: 53px;
+    max-height: 53px;
+  }
+
+
+  /* date below title on mobile */
+
+  .experience-period {
+    min-width: auto;
+
+    text-align: right;
+  }
+
+  .experience-period strong {
+    font-size: 0.68rem !important;
+  }
+
+  .experience-period span {
+    font-size: 0.9rem !important;
+  }
+
+
+  /* paragraphs */
+
+  .experience-entry > p {
+    text-align: left;
+  }
+
+}
+
+
+/* ============================================================
+   VERY SMALL SCREENS
+   ============================================================ */
+
+@media (max-width: 520px) {
+
+  .timeline-card {
+    align-items: flex-start;
+  }
+
+  .experience-entry-header {
+    flex-wrap: wrap;
+  }
+
+  .experience-entry-heading {
+    width: calc(100% - 70px);
+  }
+
+  .experience-period {
+    width: 100%;
+
+    margin-left: 70px;
+
+    text-align: left;
+  }
+
+  .experience-period strong,
+  .experience-period span {
+    display: inline;
+  }
+
+  .experience-period span {
+    margin-left: 0.3rem;
+  }
+
+}

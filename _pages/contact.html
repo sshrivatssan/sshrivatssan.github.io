@@ -1,0 +1,437 @@
+---
+layout: archive
+title: ""
+permalink: /contact/
+author_profile: false
+---
+
+<div class="contact-page">
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <section class="contact-header">
+
+    <h1>Contact</h1>
+
+    <div class="contact-header-line"></div>
+<p>
+  I welcome opportunities to connect, discuss research ideas, and explore
+  potential academic and research collaborations.
+</p>
+
+  </section>
+
+
+  <!-- =========================================================
+       CONTACT & PROFILES
+       ========================================================= -->
+
+  <section class="contact-section">
+
+    <div class="contact-section-heading">
+      <span class="heading-line"></span>
+      <h2>CONTACT &amp; PROFILES</h2>
+      <span class="heading-line"></span>
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <!-- EMAIL -->
+
+      {% if site.author.email %}
+
+      <a class="contact-card"
+         href="mailto:{{ site.author.email }}">
+
+        <div class="contact-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>Email</h3>
+          <p>{{ site.author.email }}</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+      <!-- GOOGLE SCHOLAR -->
+
+      {% if site.author.googlescholar %}
+
+      <a class="contact-card"
+         href="{{ site.author.googlescholar }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="contact-icon">
+          <i class="ai ai-google-scholar"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>Google Scholar</h3>
+          <p>View profile</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+      <!-- ORCID -->
+
+      {% if site.author.orcid %}
+
+      <a class="contact-card"
+         href="{{ site.author.orcid }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="contact-icon">
+          <i class="ai ai-orcid"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>ORCID</h3>
+          <p>View profile</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+      <!-- RESEARCHGATE -->
+
+      {% if site.author.researchgate %}
+
+      <a class="contact-card"
+         href="{{ site.author.researchgate }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="contact-icon">
+          <i class="fab fa-researchgate"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>ResearchGate</h3>
+          <p>View profile</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+      <!-- GITHUB -->
+
+      {% if site.author.github %}
+
+      <a class="contact-card"
+         href="https://github.com/{{ site.author.github }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="contact-icon">
+          <i class="fab fa-github"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>GitHub</h3>
+          <p>View profile</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+      <!-- LINKEDIN -->
+
+      {% if site.author.linkedin %}
+
+      <a class="contact-card"
+         href="https://www.linkedin.com/in/{{ site.author.linkedin }}"
+         target="_blank"
+         rel="noopener noreferrer">
+
+        <div class="contact-icon">
+          <i class="fab fa-linkedin"></i>
+        </div>
+
+        <div class="contact-content">
+          <h3>LinkedIn</h3>
+          <p>View profile</p>
+        </div>
+
+        <div class="contact-arrow">↗</div>
+
+      </a>
+
+      {% endif %}
+
+
+    </div>
+
+  </section>
+
+</div>
+
+
+<style>
+
+/* ============================================================
+   PAGE
+   ============================================================ */
+
+.contact-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 22px 70px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #647789;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.contact-header {
+  margin-bottom: 55px;
+}
+
+.contact-header h1 {
+  margin: 0;
+  color: #153f60;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contact-header-line {
+  width: 46px;
+  height: 2px;
+  margin-top: 17px;
+  background: #2385bd;
+}
+
+.contact-header p {
+  max-width: 760px;
+  margin: 22px 0 0;
+  color: #647789;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   SECTION
+   ============================================================ */
+
+.contact-section {
+  margin-bottom: 50px;
+}
+
+.contact-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-section-heading .heading-line {
+  display: block;
+  width: 42px;
+  height: 1px;
+  background: #9db7c8;
+}
+
+.contact-section-heading h2 {
+  margin: 0;
+  color: #234e6d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.02rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+}
+
+
+/* ============================================================
+   GRID
+   ============================================================ */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+
+/* ============================================================
+   CONTACT CARD
+   ============================================================ */
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  min-height: 88px;
+  padding: 16px 18px;
+
+  border: 1px solid #d8e2e8;
+  border-left: 3px solid #2587bd;
+
+  color: inherit;
+  text-decoration: none !important;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-card:hover {
+  background: #f8fafb;
+  border-color: #a9c5d5;
+  border-left-color: #2587bd;
+  transform: translateY(-2px);
+}
+
+
+/* ============================================================
+   ICON
+   ============================================================ */
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  min-width: 38px;
+
+  color: #1d78aa;
+  font-size: 1.25rem;
+}
+
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.contact-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-content h3 {
+  margin: 0 0 5px;
+
+  color: #185f8d;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.contact-content p {
+  margin: 0;
+
+  color: #647789;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.88rem;
+  line-height: 1.4;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* ============================================================
+   ARROW
+   ============================================================ */
+
+.contact-arrow {
+  margin-left: auto;
+  color: #8ba7b8;
+  font-size: 1rem;
+}
+
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+  .contact-page {
+    padding: 15px 18px 50px;
+  }
+
+  .contact-header {
+    margin-bottom: 42px;
+  }
+
+  .contact-header h1 {
+    font-size: 1.85rem;
+  }
+
+  .contact-header p {
+    font-size: 0.92rem;
+  }
+
+  .contact-section-heading {
+    gap: 12px;
+  }
+
+  .contact-section-heading .heading-line {
+    width: 26px;
+  }
+
+  .contact-section-heading h2 {
+    font-size: 0.9rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .contact-card {
+    min-height: 78px;
+    padding: 14px 15px;
+  }
+
+  .contact-content h3 {
+    font-size: 1rem;
+  }
+
+  .contact-content p {
+    font-size: 0.86rem;
+  }
+
+}
+
+</style>

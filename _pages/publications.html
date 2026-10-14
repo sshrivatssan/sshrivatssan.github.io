@@ -1,39 +1,304 @@
 ---
 layout: archive
-title: "Publications"
+title: ""
 permalink: /publications/
-author_profile: true
+author_profile: false
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">
-    This page showcases my journal articles and conference publications. They can also be found on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
-  </div>
-{% endif %}
+<div class="sv-research-page">
+
+  <!-- =====================================================
+       PAGE HEADER
+       ===================================================== -->
+
+  <header class="sv-research-header">
+
+    <h1>Research</h1>
+
+    <div class="sv-research-title-line"></div>
+
+    <p class="sv-research-intro">
+      A selection of my published and presented research work in biomedical
+      imaging and deep learning.
+    </p>
+
+  </header>
 
 
-{% include base_path %}
+  <!-- =====================================================
+       JOURNAL
+       ===================================================== -->
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+  <section class="sv-pub-section">
+
+    <div class="sv-pub-section-heading">
+      <span></span>
+      <h2>Journal</h2>
+      <span></span>
+    </div>
 
 
+    <!-- CMPB UPDATE -->
 
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://doi.org/10.1016/j.cmpbup.2026.100262"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Identification of Cardiovascular Diseases from Colour Fundus Images
+        using Ensemble Texture Features by Deep Neural Networks
+      </a>
+
+      <p class="sv-paper-authors">
+        <strong>S. Shrivatssan</strong>, M. K. Nath
+      </p>
+
+      <p class="sv-paper-venue">
+        <em>Computer Methods and Programs in Biomedicine Update</em>,
+        Elsevier, Vol. 10, Article 100262, 2026
+      </p>
+
+    </article>
+
+  </section>
+
+
+  <!-- =====================================================
+       CONFERENCES
+       ===================================================== -->
+
+  <section class="sv-pub-section">
+
+    <div class="sv-pub-section-heading">
+      <span></span>
+      <h2>Conferences</h2>
+      <span></span>
+    </div>
+
+
+    <!-- ===================================================
+         SPCOM 2026
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://doi.org/10.1109/SPCOM71105.2026.11622940"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        A Multiscale Wavelet–Graph Spectral Approach for Cardiovascular Risk
+        Assessment Using Retinal Fundus Images
+      </a>
+
+      <p class="sv-paper-authors">
+        <strong>S. Shrivatssan</strong>, M. K. Nath
+      </p>
+
+      <p class="sv-paper-venue">
+        International Conference on Signal Processing and Communications
+        (SPCOM 2026), IEEE
+      </p>
+
+    </article>
+     <!-- ===================================================
+         PCCDA 2026
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <div class="sv-paper-title sv-paper-title-static">
+        Effectiveness of U-Net Variants for Accurate Retinal Blood Vessel
+        Segmentation from Colour Fundus Images
+      </div>
+
+      <p class="sv-paper-authors">
+        <strong>Shri Vatssan S</strong>, Gogul I., Mahima N. V.,
+        Malaya Kumar Nath
+      </p>
+
+      <p class="sv-paper-venue">
+        6th International Conference on Paradigms of Communication,
+        Computing and Data Analytics (PCCDA 2026)
+      </p>
+
+    </article>
+
+    <!-- ===================================================
+         IConSCEPT 2025
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://doi.org/10.1109/IConSCEPT66142.2025.11436196"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Multistage Retinopathy of Prematurity Classification using Swin
+        Transformer with Hybrid Optimization Strategy
+      </a>
+
+      <p class="sv-paper-authors">
+        <strong>Shri Vatssan S</strong>, T. Devishree, R. Sathishkumar
+      </p>
+
+      <p class="sv-paper-venue">
+        International Conference on Signal Processing, Computation,
+        Electronics, Power and Telecommunication (IConSCEPT 2025), IEEE
+      </p>
+
+      <div class="sv-publication-note">
+
+        <i class="fas fa-award" aria-hidden="true"></i>
+
+        <span>Best Paper Award</span>
+
+        <a
+          href="https://drive.google.com/file/d/1JRgVa0FxCYCKL6SaducMnrFJ4MpMBOFU/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Award
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ===================================================
+         ICAISDA 2025
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://doi.org/10.2991/978-94-6239-616-6_52"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Lung and Colon Cancer Classification of Histopathology Images using
+        ImageNet-Pretrained EfficientNetB4 with MLP Head
+      </a>
+
+      <p class="sv-paper-authors">
+        R. Yogalakshmi,
+        <strong>S. Shri Vatssan</strong>,
+        S. Bala Abinaya, R. Sathishkumar
+      </p>
+
+      <p class="sv-paper-venue">
+        International Conference on Artificial Intelligence and Secure Data
+        Analytics (ICAISDA 2025),
+        <em>Advances in Intelligent Systems Research</em>
+      </p>
+
+    </article>
+
+
+    <!-- ===================================================
+         CIMA 2025
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <span class="sv-paper-title">
+  Deep Learning Approach for Skin Cancer Detection using
+  CBAM-Enhanced ConvNeXtV2
+</span>
+
+      <p class="sv-paper-authors">
+        N. Rubika,
+        <strong>S. Shri Vatssan</strong>,
+        K. Krithika, R. Sathishkumar
+      </p>
+
+      <p class="sv-paper-venue">
+        Congress on Intelligent Machines and Algorithms (CIMA 2025)
+      </p>
+
+    </article>
+
+  </section>
+
+
+  <!-- =====================================================
+       POSTER PRESENTATIONS
+       ===================================================== -->
+
+  <section class="sv-pub-section">
+
+    <div class="sv-pub-section-heading">
+      <span></span>
+      <h2>Poster Presentations</h2>
+      <span></span>
+    </div>
+
+
+    <!-- ===================================================
+         RAdMed 2025 — CVD
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://drive.google.com/file/d/1RK2VEBdfZFZD-J5h_ymtmcIZ879IT2VD/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Severity Classification of Cardiovascular Diseases from Fundus Images
+        using Transformer-based Models
+      </a>
+
+      <p class="sv-paper-authors">
+        <strong>Shri Vatssan S</strong>, Malaya Kumar Nath
+      </p>
+
+      <p class="sv-paper-venue">
+        International Conference on Recent Advances in Medical Science and
+        Technology (RAdMed 2025), Indian Institute of Technology Kharagpur
+      </p>
+
+    </article>
+
+
+    <!-- ===================================================
+         RAdMed 2025 — ALZHEIMER'S
+         =================================================== -->
+
+    <article class="sv-publication">
+
+      <a
+        class="sv-paper-title"
+        href="https://drive.google.com/file/d/1RJnhH9QQVKT2iGSLc88AE_8RD1GBpsiq/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Cross-Attentional CNN–Transformer Fusion for Multi-Class Alzheimer's
+        Disease Detection Using MRI Scans
+      </a>
+
+      <p class="sv-paper-authors">
+        S. Bala Abinaya,
+        <strong>S. Shri Vatssan</strong>,
+        R. Sathishkumar
+      </p>
+
+      <p class="sv-paper-venue">
+        International Conference on Recent Advances in Medical Science and
+        Technology (RAdMed 2025), Indian Institute of Technology Kharagpur
+      </p>
+
+    </article>
+
+  </section>
+
+</div>
