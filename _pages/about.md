@@ -22,7 +22,7 @@ s
       <div class="sv-photo-bg sv-photo-bg-two"></div>
 
       <img
-      src="{{ '/images/my_pic1.jpg' | relative_url }}"
+      src="{{ '/images/my_pic.jpg' | relative_url }}"
       alt="Shri Vatssan S"
       class="sv-photo"
       >
